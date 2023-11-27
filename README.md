@@ -74,10 +74,6 @@ deleteResMargin|Margin (dp) of delete button, default 6dp
 addRes|Set add button
 is_Drag|Whether to enable drag sorting, default false
 
-//Set the image scaling type (default CENTER_CROP)
-setScaleType(ImageView.ScaleType.CENTER_CROP);
-//Set delete click monitoring (if not set, the data will be removed directly by default) and handle the process yourself
-setDeleteClickListener();
 
 # Code implementation (written here in kotlin)## 1、Activity
 
