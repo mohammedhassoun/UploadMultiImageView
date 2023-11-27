@@ -27,7 +27,7 @@ allprojects {
 ## 2. Add in build.gradle under the module project:
 ```java
 dependencies {
-	        implementation 'com.github.mohammedhassoun:UploadMultiImageView:1.0.0'
+	        implementation 'com.github.mohammedhassoun:UploadMultiImageView:1.1.0'
 	}
 ```
 
