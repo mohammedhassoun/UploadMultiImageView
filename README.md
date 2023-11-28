@@ -159,7 +159,7 @@ import com.binnishtech.multiimagelibrary.imp.ImageInfo
  * accomplish ImageInfo
  */
 class ImageModel : ImageInfo {
-    private var path: Any? = null
+    var path: Any? = null
 
     fun getPath(): Any? {
         return path
