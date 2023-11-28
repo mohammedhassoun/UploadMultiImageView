@@ -80,6 +80,8 @@ is_Drag|Whether to enable drag sorting, default false
 ```kotlin
 class MainActivity : AppCompatActivity() {
 
+     private var uploadMultiImageView = UploadMultiImageView(this)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
