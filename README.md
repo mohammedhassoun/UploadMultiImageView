@@ -78,13 +78,17 @@ is_Drag|Whether to enable drag sorting, default false
 # Code implementation (written here in kotlin)## 1、Activity
 
 ```kotlin
+import com.yourPackageName.yourPackageName.model.ImageModel
+import com.binnishtech.multiimagelibrary.UploadMultiImageView
+
 class MainActivity : AppCompatActivity() {
 
-     private var uploadMultiImageView = UploadMultiImageView(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val uploadMultiImageView = UploadMultiImageView(this)
 // Loop to add several pieces of data
         val list: MutableList<ImageModel> = ArrayList()
         for (i in 0..7) {
