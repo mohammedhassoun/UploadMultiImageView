@@ -150,38 +150,40 @@ class MainActivity : AppCompatActivity() {
 
 ## 2、Data entity class implementationImageInfo
 
-```java
+```kotlin
+
+
+import com.binnishtech.multiimagelibrary.imp.ImageInfo
+
 /**
  * accomplish ImageInfo
  */
-public class ImageModel implements ImageInfo {
+class ImageModel : ImageInfo {
+    private var path: Any? = null
 
-    private Object path;
-
-    public Object getPath() {
-        return path;
+    fun getPath(): Any? {
+        return path
     }
 
-    public void setPath(Object path) {
-        this.path = path;
+    fun setPath(path: Any?) {
+        this.path = path
     }
 
     /**
      * @return  The map's address
      */
-    @Override
-    public Object getImagePath() {
-        return path;
+    override fun getImagePath(): Any? {
+        return path
     }
 
     /**
      * @return Fixed return false
      */
-    @Override
-    public boolean isLastAddViewData() {
-        return false;
+    override fun isLastAddViewData(): Boolean {
+        return false
     }
 }
+    
 ```
 # Finished
 How about it? Is it very simple? Does the core implementation only have a dozen lines of code?
